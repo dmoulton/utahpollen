@@ -1,6 +1,6 @@
 = utahpollen
 
-Description goes here.
+This is a small gem that uses nokogiri to parse the pollen level page at utahallergy.com. It inserts findings in a hash of names and levels
 
 == Contributing to utahpollen
  
