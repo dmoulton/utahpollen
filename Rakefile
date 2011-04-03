@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Extracts Utah pollen levels from intermountainallergy.com and presents them in a hash }
   gem.email = "dave@themoultons.net"
   gem.authors = ["David Moulton"]
-  gem.add_runtime_dependency 'nokogiri', '> 1.4.4'
+  gem.add_runtime_dependency 'nokogiri', '>= 1.4.4'
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'

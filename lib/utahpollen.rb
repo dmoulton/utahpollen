@@ -2,6 +2,14 @@ require 'open-uri'
 require 'nokogiri'
 
 class PollenCounts
+	LEVEL = {}
+	LEVEL['0%'] = "Extremely Low"
+	LEVEL['20%'] = "Low"
+	LEVEL['40%'] = "Moderate"
+	LEVEL['60%'] = "Moderate-High"
+	LEVEL['80%'] = "High"
+	LEVEL['100%'] = "Extremely-High"
+
 	def self.get
 		begin
 			doc = Nokogiri::HTML(open("http://www.intermountainallergy.com/pollen.html"))
@@ -17,7 +25,7 @@ class PollenCounts
 
 			res = {}
 			names.each_with_index do |n,i|
-				res[n] = counts[i]
+				res[n.lstrip] = LEVEL[counts[i]]
 			end
 		rescue
 			res = {}
