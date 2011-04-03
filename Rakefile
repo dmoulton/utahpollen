@@ -15,10 +15,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "utahpollen"
   gem.homepage = "http://github.com/dmoulton/utahpollen"
   gem.license = "MIT"
-  gem.summary = %Q{Return current Utah pollen level}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Utah Pollen Levels}
+  gem.description = %Q{Extracts Utah pollen levels from intermountainallergy.com and presents them in a hash }
   gem.email = "dave@themoultons.net"
   gem.authors = ["David Moulton"]
+  gem.add_runtime_dependency 'nokogiri', '> 1.4.4'
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
