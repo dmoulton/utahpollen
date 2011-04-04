@@ -6,9 +6,9 @@ class PollenCounts
 	LEVEL['0%'] = "Extremely Low"
 	LEVEL['20%'] = "Low"
 	LEVEL['40%'] = "Moderate"
-	LEVEL['60%'] = "Moderate-High"
+	LEVEL['60%'] = "Moderately High"
 	LEVEL['80%'] = "High"
-	LEVEL['100%'] = "Extremely-High"
+	LEVEL['100%'] = "Extremely High"
 
 	def self.get
 		begin
